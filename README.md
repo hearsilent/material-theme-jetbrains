@@ -48,7 +48,8 @@ Thanks to the awesome guys at [JetBrains](https://www.jetbrains.com/) the plugin
 
 * IDEs versions 2016.X and lower > up until version 0.2.3
 * IDEs versions 2017.1-2 > up until version 0.10.6
-* IDEs versions 2017.3 > All versions
+* IDEs versions 2017.3 > Up until version 1.6.0.4
+* IDEs versions 2018.1+ > From 1.7.0 and above
 * Android Studio 2.2.3 > up until version 0.2.3
 * Android Studio 3.0.0+ > All versions
 
@@ -88,7 +89,8 @@ Since version 0.10.0 with the possibility to add custom themes, three new themes
 - **Arc Dark**, from https://github.com/horst3180/arc-theme
 - **One Dark**, from **Atom One Dark Theme**
 
-With the ability to set up custom themes, we can even start to host a gallery of custom themes I will add some that are the most popular, or even give the ability to import them. But it's still far away! :)
+With the ability to set up custom themes, we can even start to host a gallery of custom themes. I could add some that are the most 
+popular, or even give the ability to import them. But it's still far away! :)
 
 -----------------
 
@@ -123,7 +125,8 @@ Then delete the *"@_user_Material Theme"* icls files.
 
 ### Custom Themes
 
-Since version 0.10.0 it is now possible to customize the Material Theme's theme colors to your own desires. You can find the options under **Appearance** -> **Material Custom Theme**. There you can find the different colors used and customize them to whatever suits your needs. Let your creative desires bloom!
+Since version 0.10.0 it is now possible to customize the Material Theme's theme colors to your own desires. You can find the options under **Appearance** -> **Material Custom Theme**. 
+There you can find the different colors used and customize them to whatever suits your needs. Let your creative desires bloom!
 
 In order to select your custom theme, you will need to select the theme inside the *Material Theme Chooser*, called *Custom Theme*.
 
@@ -137,9 +140,11 @@ Since the latest releases Jetbrains removed the *File Status colors* from the Co
 
 You can find the settings to set the file colors under **Colors and Fonts** -> **Material File Colors**. Of course, this is *per color scheme*, not *per theme*, so please take this into consideration.
 
-**Note**: This feature conflicts with the **File Status Colors** IDE feature. Therefore it is highly preferrable to use the **Material File Colors** for all file colors based customizations. If you prefer to use IDE's settings instead, be aware that bugs could occur that I didn't take into consideration.
+**Note**: This feature conflicts with the **File Status Colors** IDE feature. Therefore it is highly preferrable to use the **Material File Colors** for all file colors based customizations. 
+If you prefer to use IDE's settings instead, be aware that bugs could occur that I didn't take into consideration.
 
-**Note 2**: This feature is modifying the IDE, meaning that removing/disabling the feature will keep these colors in place even after restarting the IDE. For a complete cleanup, you will need to delete the **@_user_Darcula.icls** file from inside the colors settings directory.
+**Note 2**: This feature is modifying the IDE, meaning that removing/disabling the feature will keep these colors in place even after restarting the IDE. 
+For a complete cleanup, you will need to delete the **@_user_Darcula.icls** file from inside the colors settings directory.
 
 https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs
 
@@ -154,7 +159,8 @@ Such scopes may be Project Files, Non-Project Files, Libraries, Tests and so on.
 
 However, the colors prebundled are more suited to the original *Darcula* color scheme, so it is out of contrast with the bundled *Material Themes*.
 
-So, much like color schemes, the *Material Theme* is now prebundled with specific file colors for `Non-project files`. You can see them in **Options -> Appearance -> File Colors* (You need to install them first through the `Install Material File Colors` Action from the `Panel Settings` menu.
+So, much like color schemes, the *Material Theme* is now prebundled with specific file colors for `Non-project files`. 
+You can see them in **Options -> Appearance -> File Colors* (You need to install them first through the `Install Material File Colors` Action from the `Panel Settings` menu.
 
 However, to be able to see them take priority, you would have to put your relevant file color **at the top**, before the ones bundled with IDEA. 
 It is not done automatically as we don't want to override user settings, so make sure to do so if you want to use them.
@@ -163,11 +169,15 @@ It is not done automatically as we don't want to override user settings, so make
 
 ### Default Font
 
-The plugin is programmed to replace the main IDE font with the one usually used in Material Design apps and websites, `Roboto`. Of course, you can still replace it with a custom font of yours in the settings: *Appearance -> Override defaults fonts*.
+The plugin is programmed to replace the main IDE font with the one usually used in Material Design apps and websites, `Roboto`. 
+Of course, you can still replace it with a custom font of yours in the settings: *Appearance -> Override defaults fonts*.
 
-Don't forget though that the plugin doesn't come with the aforementioned font. Therefore, you need to install it first to be able to see the results: https://fonts.google.com/specimen/Roboto?selection.family=Roboto 
+Don't forget though that the plugin doesn't come with the aforementioned font. 
+Therefore, you need to install it first to be able to see the results: https://fonts.google.com/specimen/Roboto?selection.family=Roboto 
 
 Just install the font (if you want to), then restart the IDE to see if you like it :)
+
+Note: If you want to revert to the original font setting provided by Jetbrains, just uncheck the *Material Fonts* option in the settings.
 
 -------------------
 
@@ -200,12 +210,14 @@ The Accent Color is changing:
 - Autocomplete
 - Quick info
 - Scrollbars (when the accent scrollbars is checked)
+- Modified settings indicator
 
 ---------------------
 
 ### Project View Decorators
 
-Another feature taken from the Sublime Plugin is the ability to differentiate **opened directories** from closed ones. *"Opened directories"* actually mean directories from the project view whose one of their children is opened in the Editor.
+Another feature taken from the Sublime Plugin is the ability to differentiate **opened directories** from closed ones. 
+*"Opened directories"* actually mean directories from the project view whose one of their children is opened in the Editor.
 
 The plugin is decorating these directories by setting an "outlined" directory icon tinted with the selected *Accent color*.
 
@@ -220,21 +232,24 @@ You can customize some plugin features in a Settings Panel under **Settings** ->
 Active Tab Settings:
 - *Active Tab Highlight*: Customize active tab indicator color and thickness (works also for the Project View selected row)
 - *Tabs Height*: Set a custom height for tabs (between 25 and 60 pixels)
-- *Uppercase Bold Tabs*: Set the Editor Tabs in Bold Upper Case 
+- *Uppercase Bold Tabs*: Set the Editor Tabs in Bold Upper Case
+- *Tab Color Opacity*: Control the opacity of the **background colors** of tabs when using the *File Colors* feature.
 
 Panel Settings:
 - *Contrast Mode*: Add contrast to some of the IDE's components (currently only the Tabs and Tree)
+- *Monochrome Icons*: Filter all icons with the current theme's primary color.
 - *Hide Icons*: Hide file icons (you must have Material Icons options on)
 - *Custom Sidebar Height*: Set custom line height in Project View (min: 18, max: 30)
 - *Custom Tree Indent*: Increase or reduce indentation in the sidebar (min: 2, max: 8)
 - *Bold directories*: Set bold font weight for directories in the Project View
 - *Compact Status Bar*: Reduce the height of the status bar (this is the default height)
 - *Compact Table Cells*: Reduce the height of table headers and cells
+- *Compact Dropdown lists*: Reduce the height in the dropdowns (comboboxes).
 - *Custom Accent Color*: Set a custom color for accent color
 - *Arrows Style*: Change the style of the arrows in trees
 
 Component Settings:
-- *Custom Wallpaper*: Set a custom wallpaper for the "no files opened" page
+- *Uppercase buttons*: Set all buttons to uppercase.
 - *Material Design components*: Enable/Disable Material Design components (Buttons, Progress Bars...)
 - *Material Icons*: Enable/Disable the Material Theme icons to the original ones
 - *Material Theme*: Enable/Disable the material theme styles
@@ -243,7 +258,8 @@ Component Settings:
 - *Project View Decorators*: Enable/Disable the Project View Decorators. See the above section about separators.
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars
 - *Accent Scrollbars*: Set scrollbar color the same color as accent color
-- *Dark Title Bar*: Activate the coloring of the application title bar in Mac OSX/Windows
+- *Dark Title Bar*: Set the title bar to dark for dark themes (Mac OSX only)
+- *Themed Title Bar*: Change the whole system title bar to the current theme's background color (only on Windows, persists after close!)
 
 Keep in touch for new features!
 
